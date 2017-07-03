@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LVp-ID-H2a">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TableView-->
+        <scene sceneID="fa0-La-T6A">
+            <objects>
+                <tableViewController storyboardIdentifier="CustomTableViewController" id="ROb-UY-kqU" customClass="CustomTableViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="C5I-gs-l46">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="ROb-UY-kqU" id="SNA-WK-uwz"/>
+                            <outlet property="delegate" destination="ROb-UY-kqU" id="paa-d4-ZI1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="TableView" id="I7e-gZ-v28">
+                        <barButtonItem key="leftBarButtonItem" title="example 2" id="vBR-kK-joO">
+                            <connections>
+                                <action selector="regularViewControllerItemTapped:" destination="ROb-UY-kqU" id="3mh-RR-1cW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="example 1" id="HbT-qQ-D3M">
+                            <connections>
+                                <action selector="collectionViewItemTapped:" destination="ROb-UY-kqU" id="JWT-Nt-d7E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZPn-D2-Nf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2814" y="-571"/>
+        </scene>
+        <!--CollectionView-->
+        <scene sceneID="VnE-re-cSM">
+            <objects>
+                <collectionViewController storyboardIdentifier="CustomCollectionViewController" id="gMP-1Z-Fkk" customClass="CustomCollectionViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2BU-0M-tjc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5kW-5M-Yx0">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="gMP-1Z-Fkk" id="eMJ-pb-5Kd"/>
+                            <outlet property="delegate" destination="gMP-1Z-Fkk" id="4wx-a4-WHy"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="CollectionView" id="obF-ss-TFU"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kBv-4G-4zy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2548" y="109"/>
+        </scene>
+        <!--TableView-->
+        <scene sceneID="QwO-q7-aZo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LVp-ID-H2a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="TableView" id="VVi-j5-0EL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JMQ-5e-F6s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ROb-UY-kqU" kind="relationship" relationship="rootViewController" id="xCN-mG-Be7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhX-jp-qWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1608.8" y="-569.86506746626696"/>
+        </scene>
+    </scenes>
+</document>
