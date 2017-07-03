@@ -1,15 +1,14 @@
 # JRTypedString
-<!-- [![Build Status](https://img.shields.io/travis/psartzetakis/JRPageViewControllerKit.svg?style=flat-square)](https://travis-ci.org/psartzetakis/JRPageViewControllerKit) -->
 [![Version Status](https://img.shields.io/cocoapods/v/JJRTypedString.svg?style=flat-square)][podLink]
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](https://github.com/Carthage/Carthage)
 ![Platform](https://img.shields.io/cocoapods/p/JRTypedString.svg?style=flat-square)
 [![license MIT](https://img.shields.io/cocoapods/l/JRPageViewControllerKit.svg?style=flat-square)][mitLink]
 
-JRTypedString provides a convenience API in order to access `UIViewControllers`, `UIViews`, `UITableViewCells` and `UICollectionViewCells` in a type-safe way. It also eliminates the use of string identifiers if the identifier is the same as the class name.
+`JRTypedString` provides a convenience API that allows you access `UIViewControllers`, `UIViews`, `UITableViewCells` and `UICollectionViewCells` in a type-safe way. It also eliminates the use of string identifiers when the identifier is the same as the class name.
 
 ## About
 
-Most of the times the identifier of a `UITableViewCell` for example matches the class name. The current API for accessing a `UITableViewCell` is quite cumbersome and it involves string identifiers which can easily introduce typos. Also we will have to implicitly cast to the required Type and that can result in a hard to maintain and unsafe code. This is where the `JRTypedString` comes to play, it provides a set of extensions which will help you write more elegant and expressive code.
+Most of the times the identifier of a `UITableViewCell` for example matches the class name. The current API for accessing a `UITableViewCell` is quite cumbersome and it involves string identifiers which can easily introduce typos. Also we will have to implicitly cast to the required *type* and that can result to unsafe and hard to maintain codebase. This is where the `JRTypedString` comes to play, it provides a set of extensions which will help you write more elegant and type-safe code.
 
 ## Requirements
 
@@ -40,7 +39,7 @@ import JRTypedString
 
 #### UITableViewCell
 
-Before you had to do the following:
+Before, you had to do the following:
 
 ````swift
 override func viewDidLoad() {
@@ -74,7 +73,7 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 
 #### UICollectionViewCell
 
-Before you had to do the following:
+Before, you had to do the following:
 
 ````swift
 override func viewDidLoad() {
@@ -127,10 +126,10 @@ override func collectionView(_ collectionView: UICollectionView, viewForSuppleme
 
 #### UIViewController
 
-Before you had to do the following:
+Before, you had to do the following:
 
 ````swift
-  let collectionViewController = self.storyboard?.instantiateViewController(withIdentifier: "CustomCollectionViewController") as! CustomCollectionViewController
+  let collectionViewController = self.storyboard!.instantiateViewController(withIdentifier: "CustomCollectionViewController") as! CustomCollectionViewController
 ````
 
 Now you can do:
@@ -145,7 +144,8 @@ Now you can do:
   let simpleView: SimpleView = SimpleView.loadFromNib()
 ````
 
-There is an example project on **Example/** where you can check a few examples of how this API is used.
+There are a few more example available at **Example/**.
+
 ## Licence
 
 ```JRTypedString``` is being provided under [MIT Licence][MIT].
