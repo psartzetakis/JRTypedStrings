@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'JRTypedStrings'
   s.version          = '1.0.0'
-  s.summary          = '`JRTypedString` provides a convenience API that allows you access `UIViewControllers`, `UIViews`, `UITableViewCells` and `UICollectionViewCells` in a type-safe way. It also eliminates the use of string identifiers when the identifier is the same as the class name.'
+  s.summary          = '`JRTypedString` provides a convenience API that allows you access `UIViewControllers`, `UITableViewCells` etc, in a type-safe way.'
 
   s.homepage         = 'https://github.com/psartzetakis/JRTypedStrings'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'LICENSE.' }
   s.author           = 'Panagiotis Sartzetakis'
   s.source           = { :git => 'https://github.com/psartzetakis/JRTypedStrings.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/SartzetakisP'

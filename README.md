@@ -1,8 +1,8 @@
 # JRTypedString
 [![Version Status](https://img.shields.io/cocoapods/v/JJRTypedString.svg?style=flat-square)][podLink]
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](https://github.com/Carthage/Carthage)
-![Platform](https://img.shields.io/cocoapods/p/JRTypedString.svg?style=flat-square)
-[![license MIT](https://img.shields.io/cocoapods/l/JRPageViewControllerKit.svg?style=flat-square)][mitLink]
+![Platform](https://img.shields.io/cocoapods/p/JRTypedStrings.svg?style=flat-square)
+[![license MIT](https://img.shields.io/cocoapods/l/JRTypedStrings.svg?style=flat-square)][mitLink]
 
 `JRTypedString` provides a convenience API that allows you access `UIViewControllers`, `UIViews`, `UITableViewCells` and `UICollectionViewCells` in a type-safe way. It also eliminates the use of string identifiers when the identifier is the same as the class name.
 
@@ -156,5 +156,5 @@ There are a few more example available at **Example/**.
 
 >Copyright © 2017-present Panagiotis Sartzetakis
 
-[podLink]:https://cocoapods.org/pods/JRTypedString
+[podLink]:https://cocoapods.org/pods/JRTypedStrings
 [mitLink]:http://opensource.org/licenses/MIT
