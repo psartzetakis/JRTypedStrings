@@ -11,5 +11,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/*.swift'
   s.platform = :ios, '8.0'
+  s.tvos.deployment_target = '9.0'
   s.requires_arc = true
 end
