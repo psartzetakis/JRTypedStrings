@@ -4,7 +4,7 @@
 ![Platform](https://img.shields.io/cocoapods/p/JRTypedStrings.svg?style=flat-square)
 [![license MIT](https://img.shields.io/cocoapods/l/JRTypedStrings.svg?style=flat-square)][mitLink]
 
-`JRTypedStrings` provides a convenience API that allows you access `UIViewControllers`, `UIViews`, `UITableViewCells` and `UICollectionViewCells` in a type-safe way. It also eliminates the use of string identifiers when the identifier is the same as the class name.
+`JRTypedStrings` provides a convenience API that allows you to access `UIViewControllers`, `UIViews`, `UITableViewCells` and `UICollectionViewCells` in a type-safe way. It also eliminates the use of string identifiers when the identifier is the same as the class name.
 
 ## About
 
