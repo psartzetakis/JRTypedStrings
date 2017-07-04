@@ -1,5 +1,5 @@
 # JRTypedStrings
-[![Version Status](https://img.shields.io/cocoapods/v/JJRTypedStrings.svg?style=flat-square)][podLink]
+[![Version Status](https://img.shields.io/cocoapods/v/JRTypedStrings.svg?style=flat-square)][podLink]
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](https://github.com/Carthage/Carthage)
 ![Platform](https://img.shields.io/cocoapods/p/JRTypedStrings.svg?style=flat-square)
 [![license MIT](https://img.shields.io/cocoapods/l/JRTypedStrings.svg?style=flat-square)][mitLink]
@@ -52,7 +52,7 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
     let cell = tableView.dequeueReusableCell(withIdentifier: "CustomNibTableViewCell", for: indexPath) as! CustomNibTableViewCell
 
     return cell
-  }
+}
 ````
 
 Now you can do:
@@ -129,19 +129,19 @@ override func collectionView(_ collectionView: UICollectionView, viewForSuppleme
 Before, you had to do the following:
 
 ````swift
-  let collectionViewController = self.storyboard!.instantiateViewController(withIdentifier: "CustomCollectionViewController") as! CustomCollectionViewController
+let collectionViewController = self.storyboard!.instantiateViewController(withIdentifier: "CustomCollectionViewController") as! CustomCollectionViewController
 ````
 
 Now you can do:
 
 ````swift
-  let collectionViewController: CustomCollectionViewController = self.storyboard!.ts.instantiate()
+let collectionViewController: CustomCollectionViewController = self.storyboard!.ts.instantiate()
 ````
 
 #### UIView from nib
 
 ````swift
-  let simpleView: SimpleView = SimpleView.loadFromNib()
+let simpleView: SimpleView = SimpleView.loadFromNib()
 ````
 
 There are a few more example available at **Example/**.
