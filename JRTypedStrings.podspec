@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'JRTypedStrings'
-  s.version          = '1.0.0'
+  s.version          = '1.0.5'
   s.summary          = '`JRTypedString` provides a convenience API that allows you access `UIViewControllers`, `UITableViewCells` etc, in a type-safe way.'
 
   s.homepage         = 'https://github.com/psartzetakis/JRTypedStrings'
