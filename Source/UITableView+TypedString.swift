@@ -38,6 +38,16 @@ public extension TypedString where Base: UITableView {
         base.register(T.self, forCellReuseIdentifier: reuseIdentifier)
     }
     
+    /// Returns the table cell at the specified index path.
+    ///
+    /// - Parameters:
+    ///   - type: he type of view that we want to register.
+    ///   - indexPath: The index path locating the row in the table view.
+    /// - Returns: An typed object representing a cell of the table, or nil if the cell is not visible or indexPath is out of range.
+    public func cellForRow<T: UITableViewCell>(_ type: T.Type = T.self, indexPath: IndexPath) -> T? {
+        return base.cellForRow(at: indexPath) as? T
+    }
+
     /// Returns a typed reusable table-view cell object for the specified reuse identifier and adds it to the table.
     ///
     /// - Parameters:
@@ -93,4 +103,5 @@ public extension TypedString where Base: UITableView {
         
         return base.dequeueReusableHeaderFooterView(withIdentifier: identifier) as! T
     }
+    
 }

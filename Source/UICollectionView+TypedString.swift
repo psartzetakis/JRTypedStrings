@@ -38,6 +38,16 @@ public extension  TypedString where Base: UICollectionView {
         base.register(T.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
     
+    /// Returns the visible cell object at the specified index path.
+    ///
+    /// - Parameters:
+    ///   - type: The type of cell that we want to register.
+    ///   - indexPath: The index path that specifies the section and item number of the cell.
+    /// - Returns: The cell object at the corresponding index path or nil if the cell is not visible or indexPath is out of range.
+    public func cellForItem<T: UICollectionViewCell>(_ type: T.Type = T.self, indexPath: IndexPath) -> T? {
+        return base.cellForItem(at: indexPath) as? T
+    }
+    
     /// Returns a reusable cell object located by its identifier.
     ///
     /// - Parameters:
