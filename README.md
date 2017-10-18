@@ -13,8 +13,8 @@ Most of the times the identifier of a `UITableViewCell` for example matches the 
 ## Requirements
 
 * iOS 8+
-* Swift 3.0
-* Xcode 8
+* Swift 4.0
+* Xcode 9
 
 ## Installation
 
